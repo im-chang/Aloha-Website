@@ -1,0 +1,207 @@
+
+
+p {
+    font-size: 25px;
+}
+
+h2 {
+    font-style: italic;
+}
+
+.banner {
+    background:
+    linear-gradient( to bottom, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.25) 100%),
+    url("banner-girl.png") no-repeat center 35px,
+    url("flower-bkgd.jpg") no-repeat center;
+    -webkit-box-align: center;
+    background-size: cover, 150px 369px, cover;
+    height: 400px;
+    min-width: 600px;
+    position: relative;
+    top: -80px;
+}
+
+.banner p {
+    position: relative;
+    top: 120px;
+    text-align: center;
+    color: white;
+    vertical-align: middle;
+    font-size: 50px;
+    font-family: 'Playfair Regular';
+
+}
+.container {
+    min-width: 1240px;
+    min-width: 600px;
+    text-align: center;
+    position: relative;
+    top: -70px;
+}
+
+.container p {
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    top: 20px;
+    font-family: 'Raleway Light';
+    font-size: 20px;
+  }
+
+.about {
+    margin: 0 auto;
+    text-align: right;
+    font-size: 30px;
+    position: relative;
+    font-family: 'Playfair B';
+
+}
+
+.container h1 {
+    font-family: 'Playfair I';
+    font-weight: 200;
+}
+
+.banner h1 {
+    position: relative;
+    top: 148px;
+    text-align: center;
+    color: white;
+    vertical-align: middle;
+    font-size: 18px;
+    font-family: 'Raleway Medium';
+    text-transform: 'Bold';
+}
+
+.Aloha {
+    order: 1;
+    display: flex;
+    
+
+}
+
+.cart {
+    order: 3;
+    display: flex;
+    flex-direction: row-reverse;
+    position: relative;
+    top: -80px;
+    
+}
+
+.navigation {
+    text-align: center;
+      position: relative;
+    top: -95px;
+}
+
+.navigation ul {
+    color: maroon;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    order: 2;
+
+}
+
+.header {
+    min-width: 1240px;
+    min-width: 600px;
+}
+
+.footer {
+   background: rgb(43, 41, 41);
+   font-family: 'Playfair Regular';
+   font-size: small;
+}
+
+.info p {
+  color: white;
+  font-size: small;
+}
+.contact {
+  color: white;
+}
+
+.address {
+    color: white;
+}
+
+.social ul {
+    color: white;
+    position: relative;
+    top: -150px;
+    text-align: right;
+    list-style: none;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: row wrap;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+@font-face {
+  font-family: 'Raleway Light Italic';
+  src: url('Raleway-LightItalic.woff2') format('woff2'),
+      url('Raleway-LightItalic.woff') format('woff');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Raleway Medium Italic';
+  src: url('/transfonter.org-20180412-170154/Raleway-MediumItalic.woff2') format('woff2'),
+      url('/transfonter.org-20180412-170154/Raleway-MediumItalic.woff') format('woff');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Raleway Medium';
+  src: url('/transfonter.org-20180412-170154/Raleway-Medium.woff2') format('woff2'),
+      url('/transfonter.org-20180412-170154/Raleway-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Raleway Light';
+  src: url('/transfonter.org-20180412-170154/Raleway-Light.woff2') format('woff2'),
+      url('/transfonter.org-20180412-170154/Raleway-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Playfair BI';
+  src: url('/transfonter.org-20180412-170154/PlayfairDisplay-BoldItalic.woff2') format('woff2'),
+      url('/transfonter.org-20180412-170154/PlayfairDisplay-BoldItalic.woff') format('woff');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Playfair I';
+  src: url('/transfonter.org-20180412-170154/PlayfairDisplay-Italic.woff2') format('woff2'),
+      url('/transfonter.org-20180412-170154/PlayfairDisplay-Italic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Playfair Regular';
+  src: url('/transfonter.org-20180412-170154/PlayfairDisplay-Regular.woff2') format('woff2'),
+      url('/transfonter.org-20180412-170154/PlayfairDisplay-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Playfair B';
+  src: url('/transfonter.org-20180412-170154/PlayfairDisplay-Bold.woff2') format('woff2'),
+      url('/transfonter.org-20180412-170154/PlayfairDisplay-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
