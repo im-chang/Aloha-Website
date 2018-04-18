@@ -477,6 +477,16 @@ a {
     min-width: 600px;
 }
 
+.mens {
+    background:
+        url('mens-category.jpg') no-repeat center center;
+        background-size: cover cover;
+        height: 224px;
+        position: relative;
+        display: flex;
+        justify-content: flex-start;
+        width: 500px;
+}
 .Newsletter {
     color: white;
     background: linear-gradient(180deg,rgba(0,0,0,.15) 0,rgba(0,0,0,.15)),url(wave-bkgd.jpg) no-repeat bottom;
