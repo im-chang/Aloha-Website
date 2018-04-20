@@ -1,5 +1,13 @@
-var x =
-document.getElementById('pbanner')
-.style.color = "coral";
+$(document).ready(function() {
+    $(".button").append("<button>Subscribe</button>");
+    $('button').css('color', 'white');
+    $("button").on("click", function(event) {
+        event.preventDefault();
+        var inputValue = $('input').val(); 
+        alert("Thank you for Sub");
+      });
+      
 
-console.log(x);
+
+  }); // end of document.ready()
+  

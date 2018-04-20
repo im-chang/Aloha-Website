@@ -2,23 +2,20 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width initial-scale:1.0">
+        <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
         <link type="text/css" rel="stylesheet" href="style.css"/>
-        <link rel="stylesheet" href="/fontawesome-all.min.css"/>
     </head>
         <title>Aloha Apparel Co.</title>
     <body>
     <!-- Header -->
     <header class="header">
-       <section class= "carter">
        <div class="Aloha">
-           <img src="aloha-logo.svg" width="135px" height="50px"/>
+           <img src="aloha-logo.svg"/>
        </div>
-       <span class="cart">
-           <img src="cart-icon.svg" width="50px" height:"auto"/>
-       </span>
-    </section>
-       <nav class="navigation">
+       <div class="cart">
+           <img src="cart-icon.svg"/>
+       </div>
+    <nav class="navigation">
            <ul>
                <li>
                    <a href="#about">ABOUT</a>
@@ -33,7 +30,7 @@
                    <a href="#updates">UPDATES</a>
                 </li>
            </ul>
-       </nav>
+    </nav>
     </header>
     <!-- herobanner -->
     <section class="banner">
@@ -51,15 +48,16 @@
             current selection of products or sign-up for updates below.</p>
     </section>
     <!-- SHOP NOW -->
-        <div class="shopnow">
-            <ul class="shopblock">
-                <li class="mens">
-                    <span class="shop tile">
-                        <a href="#">Men's</a>
-                    </span>
-                </li>
-            </ul>
-        </div>
+      <section class="shop">
+            <div class="gridcontainer">
+                      <div class="item1"><img src="mens-category.jpg"></div>
+                      <div class="item2"><img src="trends-category.jpg"></div>
+                      <div class="item3"><img src="glasses-category.jpg"></div>
+                      <div class="item4"><img src="bags-category.jpg"></div>
+                      <div class="item5"><img src="sale-category.jpg"></div>
+                      <div class="item6"><img src="womens-category.jpg"></div>
+            </div>
+    </section>
     <!-- Newsletter -->
     <section class="Newsletter">
         <h1>
@@ -68,6 +66,10 @@
         </h1>
         <p>Stay updated on our latest product releases, be first to find out about<br>upcoming
         sales, and get free style tips from our blog. Unsubscribe at any time.
+        <form id="my-form">
+                <input type="text" id="email" />
+                <input type="submit" />
+             </form>
         </p>
     </section>
     <!-- footer -->
@@ -100,8 +102,19 @@
     
 
     </footer>
+    <!-- jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Flickity -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <!-- script -->
     <script src="Script.js"></script>
+    
+    <div class="main-carousel">
+            <div class="carousel-cell">...</div>
+            <div class="carousel-cell">...</div>
+            <div class="carousel-cell">...</div>
+            ...
+    </div>
 
     </body>
 </html>
