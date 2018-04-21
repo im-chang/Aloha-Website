@@ -444,8 +444,9 @@
     vertical-align: baseline;
     order: 2;
     position: relative;
+    top: 50px;
     right: 40px;
-    padding-top: 0.5rem;
+    padding-top: 7px;
 }
 
 .navigation a {
@@ -501,7 +502,8 @@
     font-size: 16px;
     font-stretch: 100%;
     line-height: 32px;
-    padding: 64px 64px;
+    padding-top: 56px;
+    padding-bottom: 56px;
     font-family: 'Raleway Light';
 }
 .container h1 {
@@ -544,6 +546,10 @@
     font-family: 'Playfair I';
     font-weight: lighter;
     margin-top: 0px;
+    font-size: 33.6px;
+    font-stretch: 100%;
+    font-weight: 700px;
+    line-height: 33.6px;
 }
 
 .products span {
@@ -557,32 +563,38 @@
 }
 .item1 { 
   grid-area: mens; 
-  background: url(mens-category.jpg) no-repeat;
+  background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)), url(mens-category.jpg) no-repeat 50%;
+  background-size: cover, cover;
   /* height: 25vw; */
 }
 .item2 {
   grid-area: trends;
-  background: url(trends-category.jpg) no-repeat;
+  background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)), url(trends-category.jpg) no-repeat 50%;
+  background-size: cover, cover;
 }
 
 .item3 {
   grid-area: glasses;
-  background: url(glasses-category.jpg) no-repeat;
+  background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)), url(glasses-category.jpg) no-repeat 50%;
+  background-size: cover, cover;
 }
 
 .item4 {
   grid-area: sales;
-  background: url(sale-category.jpg) no-repeat;
+  background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)), url(sale-category.jpg) no-repeat 50%;
+  background-size: cover, cover;
 }
 
 .item5 {
   grid-area: bags;
-  background: url(bags-category.jpg) no-repeat;
+  background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)), url(bags-category.jpg) no-repeat 50%;
+  background-size: cover, cover;
 }
 
 .item6 {
   grid-area: womens;
-  background: url(womens-category.jpg) no-repeat;
+  background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)), url(womens-category.jpg) no-repeat 50%;
+  background-size: cover, cover;
 }
 
 /* .item1 {
@@ -639,6 +651,26 @@
   height: 507.5px;
 }
 
+.carousel-cell p {
+    text-align: center;
+    font-family: 'Raleway Light';
+    font-size: 10.5px;
+    font-weight: 700;
+    font-stretch: 100%;
+    margin-bottom: 10.5px;
+    color: #969696
+}
+
+.carousel-cell h1 {
+    text-align: center;
+    color: #e2574c;
+    font-size: 21px;
+    font-stretch: 100%;
+    font-weight: 400;
+    line-height: 21px;
+    margin-bottom: 14px;
+}
+
 .Newsletter{
     text-align: center;
     padding-bottom: 56px;
@@ -669,14 +701,21 @@
 
 .register {
     margin-top: 28px;
-    margin-left: 17.484px;
-    margin-right: 17.484px;
+    margin-left: 26.406px;
+    margin-right: 26.406px;
+    margin-bottom: 0px;
     position: relative;
+    font-size: 14px;
+    font-weight: 400;
 }
 .email {
    padding-top: 7px;
    padding-bottom: 7px;
    padding-left: 24.5px;
+   padding-right: 150px;
+   font-stretch: 100%;
+   line-height: 28px;
+   text-align: start;
 }
 .subscribe {
     background-color: #e2574c;
@@ -688,18 +727,68 @@
     padding-left: 21px;
     padding-right: 21px;
     justify-content: flex-start;
+    right: 3.5px;
+    text-align: center;
+    top: 3.5px;
+    white-space: pre;
+    font-family: 'Raleway Light'
 }
 
 .footer {
-    padding: 64px;
+    padding-top: 54px;
+    padding-bottom: 54px;
     background: #242424;
     font-family: 'Playfair Regular';
     font-size: small;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    height: auto;
  }
 
- .footer-container {
-     color: #fff;
-     text-align: left;
+.footer-container {
+    text-align: center;
+}
+
+.footer-container a {
+    color: #fff;
+}
+.address p {
+    color: #969696;
+    padding-top: 14px;
+    padding-bottom: 14px;
+ }
+
+ .social {
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Raleway Light';
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    list-style: none;
+    font-weight: 400;
+    line-height: 32px;
+    vertical-align: baseline;
+ }
+
+ .social li {
+    display: inline;
+    word-spacing: 13px;
+    text-align: center;
+    position: relative;
+    right: 15px;
+    font-size: 14px;
+ }
+ .social a {
+    text-decoration: none;
+    box-sizing: border-box;
+ }
+
+ network {
+    display: none;
+    color: #fff;
  }
    
  @media (min-width: 600px) {
@@ -707,10 +796,43 @@
   .gridcontainer {
     display: grid;
     grid-gap: 8px;
-    grid-row-gap: 4px;
+    grid-row-gap: 8px;
+    font-size: 38px;
+    grid-auto-rows: 25vw;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-areas:
       'mens mens trends glasses'
       'sales bags womens womens'
   }
+
+  .footer {
+    padding-top: 64px;
+    padding-bottom: 64px;
+    height: 288px;
+  }
+  .footer-container {
+    text-align: left;
+    padding-left: 24px;
+    padding-right: 24px;
+  } 
+  .network {
+    display: list-item;
+    text-align: right;
+    position: relative;
+    bottom: 170px;
+  }
+.social {
+    text-align: right;
+    padding-right: 32px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-left: 0px;
+}
+.social a {
+    bottom: 170px;
+}
+
+.social i {
+    bottom: 170px;
+}
 }
