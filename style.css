@@ -478,8 +478,8 @@
 .banner {
     background:
     linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
-    url("/Images/banner-girl.png") no-repeat center 60px,
-    url("/Images/flower-bkgd.jpg") repeat-x top;
+    url("Images/banner-girl.png") no-repeat center 60px,
+    url("Images/flower-bkgd.jpg") repeat-x top;
     background-size: cover,150px, cover;
     height: 400px;
     padding-top: 0px;
@@ -568,18 +568,18 @@
 }
 .item1 { 
   grid-area: mens; 
-  background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)), url(/Images/mens-category.jpg) no-repeat 50%;
+  background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)), url(Images/mens-category.jpg) no-repeat 50%;
   background-size: cover, cover;
 }
 .item2 {
   grid-area: trends;
-  background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)), url(/Images/trends-category.jpg) no-repeat 50%;
+  background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)), url(Images/trends-category.jpg) no-repeat 50%;
   background-size: cover, cover;
 }
 
 .item3 {
   grid-area: glasses;
-  background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)), url(/Images/glasses-category.jpg) no-repeat 50%;
+  background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)), url(Images/glasses-category.jpg) no-repeat 50%;
   background-size: cover, cover;
 }
 
@@ -591,13 +591,13 @@
 
 .item5 {
   grid-area: bags;
-  background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)), url(/Images/bags-category.jpg) no-repeat 50%;
+  background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)), url(Images/bags-category.jpg) no-repeat 50%;
   background-size: cover, cover;
 }
 
 .item6 {
   grid-area: womens;
-  background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)), url(/Images/womens-category.jpg) no-repeat 50%;
+  background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)), url(Images/womens-category.jpg) no-repeat 50%;
   background-size: cover, cover;
 }
 
@@ -645,7 +645,7 @@
     padding-bottom: 56px;
     padding-top: 56px;
     color: white;
-    background: linear-gradient(180deg,rgba(0,0,0,.15) 0,rgba(0,0,0,.15)),url(/Images/wave-bkgd.jpg) no-repeat bottom;
+    background: linear-gradient(180deg,rgba(0,0,0,.15) 0,rgba(0,0,0,.15)),url(Images/wave-bkgd.jpg) no-repeat bottom;
     margin-bottom: 8px;
     display: block;
     line-height: 32px;
