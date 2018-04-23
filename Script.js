@@ -5,10 +5,5 @@ var flkty = new Flickity( elem, {
   cellAlign: 'left',
   contain: true
 });
-    // $('.main-carousel').flickity({
-    //     // options
-    //     cellAlign: 'left',
-    //     contain: true
-    //   });
 
 }); // end of document.ready()
