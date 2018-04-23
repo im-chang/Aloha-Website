@@ -12,11 +12,11 @@
     <!-- Header -->
     <header class="header">
        <div class="Aloha">
-           <img src="aloha-logo.svg"/>
+           <img src="/Images/aloha-logo.svg"/>
        </div>
-       <!-- <div class="cart2">
-            <img src="cart-icon.svg"/>
-        </div> -->
+       <div class="cart">
+            <img src="/Images/cart-icon.svg"/>
+        </div>
     <nav class="navigation">
            <ul>
                <li>
@@ -33,9 +33,6 @@
                 </li>
            </ul>
     </nav>
-    <div class="cart">
-        <img src="cart-icon.svg"/>
-    </div> 
     </header>
     <!-- herobanner -->
     <section class="banner">
@@ -47,13 +44,13 @@
     <!-- about -->
     <section class="container">
         <h1>Hand-Crafted
-            <span class="about">Styles</span>
+            <span id="about" class="about">Styles</span>
         </h1>
         <p>Aloha Apparel Co. sells only the finest ready-to-travel clothing. Browse our
             current selection of products or sign-up for updates below.</p>
     </section>
     <!-- SHOP NOW -->
-    <section class="shop">
+    <section class="shop" id="shop">
         <div class="gridcontainer">
                 <!-- .item$*{ item $}*6 -->
                 <div class="item1 flex-center"> <a href="#mens">MEN'S</a></div>
@@ -62,56 +59,50 @@
                 <div class="item4 flex-center"> <a href="#sales">SALES</a></div>
                 <div class="item5 flex-center"> <a href="#bags">BAGS</a></div>
                 <div class="item6 flex-center"> <a href="#womens">WOMENS</a></div>
-                  <!-- <div class="item1"><img src="mens-category.jpg"></div>
-                  <div class="item2"><img src="trends-category.jpg"></div>
-                  <div class="item3"><img src="glasses-category.jpg"></div>
-                  <div class="item4"><img src="sale-category.jpg"></div>
-                  <div class="item5"><img src="bags-category.jpg"></div>
-                  <div class="item6"><img src="womens-category.jpg"></div> -->
         </div>
     </section>
     <!-- Featured -->
-    <section class="featured">
+    <section class="featured" id="featured">
         <div class="products">
             <h2>Most-Loved <span>Products</span></h2>
         </div>
         <div class="main-carousel">
-            <div class="carousel-cell"><img src="stretch-knit-dress.jpg">
+            <div class="carousel-cell"><img src="/Images/stretch-knit-dress.jpg">
                 <p>DRESSES</p>
                 <h1>Stretch Knit Dress</h1>
                 <p>$169.00</p>
             </div>
-            <div class="carousel-cell"><img src="cotton-blue-shirt.jpg">
+            <div class="carousel-cell"><img src="/Images/cotton-blue-shirt.jpg">
                 <p>SHIRTS</p>
                 <h1>Cotton Blue Shirt</h1>
                 <p>$89.00</p>
             </div>
-            <div class="carousel-cell"><img src="checked-stretch-dress.jpg">
+            <div class="carousel-cell"><img src="Images/checked-stretch-dress.jpg">
                 <p>DRESSES</p>
                 <h1>Checked Stretch Dress</h1>
                 <p>$129.00</p>
             </div>
-            <div class="carousel-cell"><img src="blue-hipster-backpack.jpg">
+            <div class="carousel-cell"><img src="Images/blue-hipster-backpack.jpg">
                 <p>BAGS</p>
                 <h1>Blue Hipster Backpack</h1>
                 <p>$69.00</p>
             </div>
-            <div class="carousel-cell"><img src="demin-overall-shorts.jpg">
+            <div class="carousel-cell"><img src="Images/demin-overall-shorts.jpg">
                 <p>DENIM</p>
                 <h1>Denim Overall Shorts</h1>
                 <p>$89.00</p>
             </div>
-            <div class="carousel-cell"><img src="pink-dotted-dress.jpg">
+            <div class="carousel-cell"><img src="Images/pink-dotted-dress.jpg">
                 <p>DRESSES</p>
                 <h1>Pink Dotted Dress</h1>
                 <p>$99.00</p>
             </div>
-            <div class="carousel-cell"><img src="blue-silk-dress.jpg">
+            <div class="carousel-cell"><img src="Images/blue-silk-dress.jpg">
                 <p>DRESSES</p>
                 <h1>Blue Silk Dress</h1>
                 <p>$119.00</p>
             </div>
-            <div class="carousel-cell"><img src="cotton-yellow-tshirt.jpg">
+            <div class="carousel-cell"><img src="Images/cotton-yellow-tshirt.jpg">
                 <p>SHIRTS</p>
                 <h1>Cotton Yellow Tshirt</h1>
                 <p>$39.00</p>
@@ -121,7 +112,7 @@
     </section>
     <!-- Newsletter -->
     <section class="Newsletter">
-        <div class="news">
+        <div class="news" id="updates">
         <h2>
             Sign-up for
             <span>Updates</span>
@@ -129,9 +120,8 @@
         <p>Stay updated on our latest product releases, be first to find out about upcoming
         sales, and get free style tips from our blog. Unsubscribe at any time.</p>
     <form class="register">
-        <input type="email" name="your_email" class="email"
-        value placeholder="Your Email">
-        <input type="submit" name="subscribe" value="Subscribe" class="subscribe">
+        <input type="email-input" id="email" name="email" class="email" value placeholder="Your Email">
+        <button type="submit" id="button" class="subscribe">Subscribe</button>
     </form>
         </div>
     </section>

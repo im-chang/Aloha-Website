@@ -407,104 +407,79 @@
   }
 
 .header {
-    /* min-width: 55px; */
     padding-top: 1rem;
+    margin: 0;
+    padding: 0;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     padding-bottom: 0.5rem;
     font-stretch: 100%;
-    padding: 14px 11px 7px 11px;
-    
+    padding-top: 14px;
   }
 
 .Aloha {
-    margin: 0;
-    justify-content: flex-start;
-    padding: 0;
+    align-self: flex-start;
+    flex: 0 1 50%;
 }
 
 .Aloha img {
-    height: 57.5px;
-    width: 120px;
+    line-height: 28px;
+    max-width: 120px;
     order: 1;
     display: flex;
-    flex: 0 1 50%;
-    vertical-align: baseline;
     position: relative;
-    left: 15px;
-    border-image-repeat: stretch;
-    border-image-width: 1;
-    flex-grow: 0;
-    flex-shrink: 1;
-    flex-basis: 20%;
+
+}
+
+.navigation {
+    flex: 0 1 auto;
+    align-self: center;
+    display: block;
+    margin: 0 auto;
 }
 
 .navigation ul {
+  border-top: 1px solid #d7d7d7;
+  padding-top: .5rem;
   text-align: center;
-  align-self: center;
-  list-style-position: outside;
-  flex: 1 0 auto;
-  vertical-align: baseline;
-  order: 2;
-  position: relative;
-  padding-top: 7px;
-}
-.navigation li {
-    display: inline;
-    word-spacing: 20px;
-    list-style: none;
-    text-align: center;
-    align-self: center;
-    list-style-position: outside;
-    flex: 1 0 auto;
-    vertical-align: baseline;
-    order: 2;
-    position: relative;
-    top: 40px;
-    right: 35px;
-    padding-top: 7px;
-    border-top: 1px solid #d7d7d7;
-    padding-bottom: 0px;
-    border-image-repeat: stretch;
-    border-image-width: 1;
-    font-stretch: 100%;
-    font-weight: 400;
-    line-height: 28px;
+  list-style: none;
+  box-sizing: border-box;
 }
 
 .navigation a {
-    color: #e2574c;
-    font-family: 'Raleway Medium';
-    font-size: 14px;
-    list-style: none;
+    font-family: 'Raleway Light';
+    font-size: 1rem;
+    margin: 0 .5rem;
+    font-weight: 700;
+    display: inline;
     text-decoration: none;
-    text-align: center;
+    color: #e2574c;
+}
+
+.navigation li {
+    display: inline;
 }
 
 .cart {
-    margin: 0;
-    padding: 0;
-    order: 3;
-    vertical-align: baseline;
+    align-self: flex-end;
+    cursor: pointer;
+    flex: 0 1 50%;
+    text-align: right;
 }
 .cart img {
     height: auto;
-    border: 0;
-    text-align: right;
-    justify-content: flex-end;
-    cursor: pointer;
-    vertical-align: baseline;
-    width: 55px;
-    position: relative;
-    order: 3;
+    max-width: 100%;
+    width: 50px;
+    
 }
 
 .banner {
     background:
     linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
-    url("banner-girl.png") no-repeat center 60px,
-    url("flower-bkgd.jpg") repeat-x top;
+    url("/Images/banner-girl.png") no-repeat center 60px,
+    url("/Images/flower-bkgd.jpg") repeat-x top;
     background-size: cover,150px, cover;
     height: 400px;
     padding-top: 0px;
@@ -570,17 +545,6 @@
   color: #fff;
   text-decoration: none;
 }
-/* .gridcontainer {
-    box-sizing: border-box;
-    display: grid;
-    column-count: 3;
-    grid-gap: 4px;
-    grid-row-gap: 4px;
-    width: 100%;
-    height: 100%;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-  } */
 
 .products h2 {
     font-family: 'Playfair I';
@@ -604,69 +568,38 @@
 }
 .item1 { 
   grid-area: mens; 
-  background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)), url(mens-category.jpg) no-repeat 50%;
+  background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)), url(/Images/mens-category.jpg) no-repeat 50%;
   background-size: cover, cover;
-  /* height: 25vw; */
 }
 .item2 {
   grid-area: trends;
-  background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)), url(trends-category.jpg) no-repeat 50%;
+  background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)), url(/Images/trends-category.jpg) no-repeat 50%;
   background-size: cover, cover;
 }
 
 .item3 {
   grid-area: glasses;
-  background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)), url(glasses-category.jpg) no-repeat 50%;
+  background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)), url(/Images/glasses-category.jpg) no-repeat 50%;
   background-size: cover, cover;
 }
 
 .item4 {
   grid-area: sales;
-  background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)), url(sale-category.jpg) no-repeat 50%;
+  background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)), url(Images/sale-category.jpg) no-repeat 50%;
   background-size: cover, cover;
 }
 
 .item5 {
   grid-area: bags;
-  background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)), url(bags-category.jpg) no-repeat 50%;
+  background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)), url(/Images/bags-category.jpg) no-repeat 50%;
   background-size: cover, cover;
 }
 
 .item6 {
   grid-area: womens;
-  background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)), url(womens-category.jpg) no-repeat 50%;
+  background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)), url(/Images/womens-category.jpg) no-repeat 50%;
   background-size: cover, cover;
 }
-
-/* .item1 {
-    grid-column: 1/4;
-    
-    /* box-sizing: border-box;
-    flex-basis: 50%;
-    line-height: 32px;
-    background-size: cover, cover; */
-/* } */
-
-/* .item2 {
-    grid-column: 3/4;
-}
-
-.item3 {
-    grid-column: 3/4;
-}
-
-.item4 {
-    grid-column: 1/4;
-}
-
-.item5 {
-    grid-column: 2/4;
-}
-
-.item6 {
-    grid-column: 3/4;
-
-} */
 
 .featured {
     padding-top: 56px;
@@ -676,12 +609,7 @@
     text-align: center;
     font-size: 16px;
     margin-bottom: 21px;
-    
-    /* padding-top: 42px;
-    padding-bottom: 42px;
-    padding-left: 28px;
-    padding-right: 28px;
-    margin-bottom: 21px; */
+
 }
 
 .carousel-cell {
@@ -717,7 +645,7 @@
     padding-bottom: 56px;
     padding-top: 56px;
     color: white;
-    background: linear-gradient(180deg,rgba(0,0,0,.15) 0,rgba(0,0,0,.15)),url(wave-bkgd.jpg) no-repeat bottom;
+    background: linear-gradient(180deg,rgba(0,0,0,.15) 0,rgba(0,0,0,.15)),url(/Images/wave-bkgd.jpg) no-repeat bottom;
     margin-bottom: 8px;
     display: block;
     line-height: 32px;
@@ -817,8 +745,8 @@
 }
 
 .footer {
-    padding-top: 54px;
-    padding-bottom: 54px;
+    padding: 0 2%;
+    margin: 0 auto;
     background: #242424;
     font-family: 'Playfair Regular';
     font-size: small;
@@ -890,6 +818,13 @@
   .container {
     max-width: 720px;
   }
+
+  .container h1 {
+    font-size: 2.4rem;
+  }
+  .container p {
+    font-size: 1.15rem;
+  }
   .collection p {
     font-size: 1.25rem;
   }
@@ -943,7 +878,7 @@
     bottom: 170px;
 }
 
-.navigation li {
+.navigation ul {
   border-top: 0px;
 }
   

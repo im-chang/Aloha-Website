@@ -1,3 +1,3 @@
 # Aloha Project
 
-This is where the description of the project will go.
+The Aloha Project utilized various forms of CSS to ensure the proper styling of the webpage. All the pictures were seperate and had to be placed in their respective positions. This increased the difficulty but was also a great learning experience in replicating the website. Incorporating Flickity, smooth scrolling and email verification was also a challenge for me but also a great learning experience.
